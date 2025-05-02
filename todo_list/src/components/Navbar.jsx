@@ -3,7 +3,7 @@ import { IoCloseCircleSharp } from "react-icons/io5";
 
 const Navbar = () => {
  
-  const[aboutus , setaboutus] = useState(false); 
+  const[aboutus , setaboutus] = useState(true); 
   const handleaboutus=(e)=>{
     setaboutus(!aboutus)
   }

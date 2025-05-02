@@ -34,10 +34,10 @@ function App() {
 
   }
   const handleAdd = (e) => {
-    settodos([...todos, { id: uuidv4(), todo, iscomplete: false }])
+   if(todo.length>3){ settodos([...todos, { id: uuidv4(), todo, iscomplete: false }])
     settodo("");
     console.log(todos)
-    savetoLS()
+    savetoLS()}
 
   }
   const handlecheckbox = (e) => {
@@ -63,7 +63,7 @@ function App() {
 
   }
   const handleEdit = (e) => {
-
+   
     let id = e.target.name;
 
     let index = todos.findIndex(item => {
